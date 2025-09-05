@@ -2,10 +2,10 @@ pipeline {
     agent none
 
     environment {
-        SONAR_URL      = "http://52.91.109.138:9000"
-        DOCKER_IMAGE   = "abhishekf5/ultimate-cicd:${BUILD_NUMBER}"
+        SONAR_URL      = "http://34.226.216.229:9000"
+        DOCKER_IMAGE   = "viishnu/ultimate-cicd:${BUILD_NUMBER}"
         GIT_REPO_NAME  = "Jenkins-Zero-To-Hero"
-        GIT_USER_NAME  = "iam-veeramalla"
+        GIT_USER_NAME  = "vishnubongoni"
     }
 
     stages {
