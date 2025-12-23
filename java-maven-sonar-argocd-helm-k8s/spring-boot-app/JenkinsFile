@@ -2,7 +2,7 @@ pipeline {
     agent none
 
     environment {
-        SONAR_URL      = "http://54.174.15.221:9000/:9000"
+        SONAR_URL      = "http://54.174.15.221:9000"
         DOCKER_IMAGE   = "viishnu/ultimate-cicd:${BUILD_NUMBER}"
         GIT_REPO_NAME  = "Jenkins-Zero-To-Hero"
         GIT_USER_NAME  = "vishnubongoni"
