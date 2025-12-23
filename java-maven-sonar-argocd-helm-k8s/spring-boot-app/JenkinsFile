@@ -70,7 +70,8 @@ pipeline {
                     dir('java-maven-sonar-argocd-helm-k8s/spring-boot-app') {
                         sh '''
                             echo "Logging in to Docker Hub..."
-                            docker login -u $DOCKER_USER -p $DOCKER_PASS
+                            echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
+
 
                             echo "Building Docker image ${DOCKER_IMAGE}..."
                             docker build -t ${DOCKER_IMAGE} .
